@@ -1,0 +1,172 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+  <filter>
+    <filter-name>AuthFilter</filter-name>
+    <filter-class>com.jspSchedule.AuthFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/schedule/MonthView</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/schedule/NewSchedule</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/schedule/ExeInsertSchedule</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/schedule/ScheduleView</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/schedule/EditSchedule</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/schedule/ExeUpdateSchedule</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/schedule/DeleteCheck</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/schedule/ExeDeleteSchedule</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/schedule/ExeInsertUser</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/schedule/Logout</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <servlet-name>MonthView</servlet-name>
+    <servlet-class>com.jspSchedule.MonthView</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>MonthView</servlet-name>
+    <url-pattern>/schedule/MonthView</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>NewSchedule</servlet-name>
+    <servlet-class>com.jspSchedule.NewSchedule</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>NewSchedule</servlet-name>
+    <url-pattern>/schedule/NewSchedule</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ExeInsertSchedule</servlet-name>
+    <servlet-class>com.jspSchedule.ExeInsertSchedule</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ExeInsertSchedule</servlet-name>
+    <url-pattern>/schedule/ExeInsertSchedule</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ScheduleView</servlet-name>
+    <servlet-class>com.jspSchedule.ScheduleView</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ScheduleView</servlet-name>
+    <url-pattern>/schedule/ScheduleView</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EditSchedule</servlet-name>
+    <servlet-class>com.jspSchedule.EditSchedule</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>EditSchedule</servlet-name>
+    <url-pattern>/schedule/EditSchedule</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ExeUpdateSchedule</servlet-name>
+    <servlet-class>com.jspSchedule.ExeUpdateSchedule</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ExeUpdateSchedule</servlet-name>
+    <url-pattern>/schedule/ExeUpdateSchedule</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteCheck</servlet-name>
+    <servlet-class>com.jspSchedule.DeleteCheck</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteCheck</servlet-name>
+    <url-pattern>/schedule/DeleteCheck</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ExeDeleteSchedule</servlet-name>
+    <servlet-class>com.jspSchedule.ExeDeleteSchedule</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ExeDeleteSchedule</servlet-name>
+    <url-pattern>/schedule/ExeDeleteSchedule</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginCheck</servlet-name>
+    <servlet-class>com.jspSchedule.LoginCheck</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginCheck</servlet-name>
+    <url-pattern>/schedule/LoginCheck</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ExeInsertUser</servlet-name>
+    <servlet-class>com.jspSchedule.ExeInsertUser</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ExeInsertUser</servlet-name>
+    <url-pattern>/schedule/ExeInsertUser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>com.jspSchedule.Logout</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/schedule/Logout</url-pattern>
+  </servlet-mapping>
+
+</web-app>
